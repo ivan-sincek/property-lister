@@ -1,0 +1,91 @@
+# Property Lister
+
+Extract and convert property list files from SQLite database files and from other property list files.
+
+Tested on Kali Linux v2023.1 (64-bit).
+
+Made for educational purposes. I hope it will help!
+
+## Table of Contents
+
+* [How to Install](#how-to-install)
+* [How to Build and Install Manually](#how-to-build-and-install-manually)
+* [Extracting and Converting](#extracting-and-converting)
+* [Usage](#usage)
+
+## How to Install
+
+```bash
+pip3 install property-lister
+
+pip3 install --upgrade property-lister
+
+apt-get -y install plistutil
+```
+
+## How to Build and Install Manually
+
+Run the following commands:
+
+```bash
+git clone https://github.com/ivan-sincek/property-lister && cd property-lister
+
+python3 -m pip install --upgrade build
+
+python3 -m build
+
+python3 -m pip install dist/property_lister-2.2-py3-none-any.whl
+
+apt-get -y install plistutil
+```
+
+## Extracting and Converting
+
+Extract and convert property list files inside Cache.db unencrypted SQLite database file:
+
+```fundamental
+scp root@192.168.1.10:/var/mobile/Containers/Data/Application/YYY...YYY/Library/Caches/com.someapp.dev/Cache.db ./
+
+property-lister -db Cache.db -o results_db
+```
+
+Extract and convert property list files inside an IPA:
+
+```fundamental
+unzip someapp.ipa
+
+property-lister -db Payload -o results_db
+
+property-lister -pl Payload -o results_pl
+```
+
+Repeat the same for the app specific directories.
+
+Check my other project on how to [search for files](https://github.com/ivan-sincek/ios-penetration-testing-cheat-sheet#3-search-for-files-and-directories) and on how to [extract sensitive data from the files](https://github.com/ivan-sincek/ios-penetration-testing-cheat-sheet#4-inspect-files).
+
+## Usage
+
+```fundamental
+Property Lister v2.2 ( github.com/ivan-sincek/property-lister )
+
+--- Extract from an SQLite database file ---
+Usage:   property-lister -db database -o out
+Example: property-lister -db Cache.db -o results
+
+--- Extract from a property list file ---
+Usage:   property-lister -pl property-list -o out
+Example: property-lister -pl Info.plist    -o results
+
+DESCRIPTION
+    Extract and convert property list files
+DATABASE
+    SQLite database file, or directory containing multiple files
+    -db <database> - Cache.db | databases | etc.
+PROPERTY LIST
+    Property list file, or directory containing multiple files
+    -pl <property-list> - Info.plist | plists | etc.
+OUT
+    Output directory
+    All extracted propery list files will be saved in this directory
+    -o <out> - results | etc.
+```
