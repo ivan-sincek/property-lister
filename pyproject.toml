@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "property-lister"
-version = "2.6"
+version = "2.7"
 authors = [{ name = "Ivan Sincek" }]
 description = "Extract and convert property list files from SQLite database files and from other property list files."
 readme = "README.md"

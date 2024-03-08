@@ -37,6 +37,12 @@ On macOS, run:
 brew install libplist
 ```
 
+### Standard Install
+
+```bash
+pip3 install --upgrade property-lister
+```
+
 ## Build and Install From the Source
 
 Run the following commands:
@@ -48,7 +54,7 @@ python3 -m pip install --upgrade build
 
 python3 -m build
 
-python3 -m pip install dist/property_lister-2.6-py3-none-any.whl
+python3 -m pip install dist/property_lister-2.7-py3-none-any.whl
 ```
 
 ## Extracting and Converting
@@ -78,7 +84,7 @@ Check my other project on how to [search for files](https://github.com/ivan-sinc
 ## Usage
 
 ```fundamental
-Property Lister v2.6 ( github.com/ivan-sincek/property-lister )
+Property Lister v2.7 ( github.com/ivan-sincek/property-lister )
 
 --- Extract from an SQLite database file ---
 Usage:   property-lister -db database -o out
