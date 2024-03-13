@@ -45,8 +45,6 @@ pip3 install --upgrade property-lister
 
 ## Build and Install From the Source
 
-Run the following commands:
-
 ```bash
 git clone https://github.com/ivan-sincek/property-lister && cd property-lister
 
