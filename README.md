@@ -52,7 +52,7 @@ python3 -m pip install --upgrade build
 
 python3 -m build
 
-python3 -m pip install dist/property_lister-2.7-py3-none-any.whl
+python3 -m pip install dist/property_lister-2.8-py3-none-any.whl
 ```
 
 ## Extracting and Converting
@@ -82,7 +82,7 @@ Check my other project on how to [search for files](https://github.com/ivan-sinc
 ## Usage
 
 ```fundamental
-Property Lister v2.7 ( github.com/ivan-sincek/property-lister )
+Property Lister v2.8 ( github.com/ivan-sincek/property-lister )
 
 --- Extract from an SQLite database file ---
 Usage:   property-lister -db database -o out
