@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "property-lister"
-version = "2.9"
+version = "3.0"
 authors = [{ name = "Ivan Sincek" }]
 description = "Extract and convert property list files from SQLite database files and from other property list files."
 readme = "README.md"
@@ -14,7 +14,7 @@ classifiers = [
 	"License :: OSI Approved :: MIT License",
 	"Operating System :: POSIX :: Linux"
 ]
-dependencies = ["biplist>=1.0.3", "datetime>=5.2"]
+dependencies = ["biplist>=1.0.3"]
 
 [project.urls]
 "Homepage" = "https://github.com/ivan-sincek/property-lister"

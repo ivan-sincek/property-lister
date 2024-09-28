@@ -117,7 +117,7 @@ class PropertyLister:
 class MyArgParser(argparse.ArgumentParser):
 
 	def print_help(self):
-		print("Property Lister v2.8 ( github.com/ivan-sincek/property-lister )")
+		print("Property Lister v3.0 ( github.com/ivan-sincek/property-lister )")
 		print("")
 		print("--- Extract from an SQLite database file ---")
 		print("Usage:   property-lister -db database -o out")
@@ -239,7 +239,7 @@ def main():
 	if validate.run():
 		print("##########################################################################")
 		print("#                                                                        #")
-		print("#                          Property Lister v2.8                          #")
+		print("#                          Property Lister v3.0                          #")
 		print("#                                     by Ivan Sincek                     #")
 		print("#                                                                        #")
 		print("# Extract and convert property list files.                               #")
