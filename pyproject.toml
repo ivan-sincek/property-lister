@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75.3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "property-lister"
+version = "3.1"
+authors = [{ name = "Ivan Sincek" }]
+description = "Extract and convert property list files from SQLite database files and from other property list files."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: POSIX :: Linux"
+]
+dependencies = [
+	"biplist>=1.0.3",
+	"colorama>=0.4.6",
+	"termcolor>=2.4.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ivan-sincek/property-lister"
+
+[project.scripts]
+property-lister = "property_lister.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
