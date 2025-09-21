@@ -52,7 +52,7 @@ python3 -m pip install --upgrade build
 
 python3 -m build
 
-python3 -m pip install dist/property_lister-3.2-py3-none-any.whl
+python3 -m pip install dist/property_lister-3.3-py3-none-any.whl
 ```
 
 ## Extracting and Converting
@@ -82,7 +82,7 @@ Check my other project on how to [search for files](https://github.com/ivan-sinc
 ## Usage
 
 ```fundamental
-Property Lister v3.2 ( github.com/ivan-sincek/property-lister )
+Property Lister v3.3 ( github.com/ivan-sincek/property-lister )
 
 --- Extract from an SQLite database file ---
 Usage:   property-lister -db database -o out
@@ -111,6 +111,6 @@ DIRECTORY STRUCTURE
 
 ## Images
 
-<p align="center"><img src="https://github.com/ivan-sincek/property-lister/blob/main/img/extraction.png" alt="Extraction"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ivan-sincek/property-lister/refs/heads/main/img/extraction.png" alt="Extraction"></p>
 
 <p align="center">Figure 1 - Extraction</p>

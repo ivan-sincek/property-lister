@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-APP_VERSION = "v3.2"
+APP_VERSION = "v3.3"
 
 def banner():
 	"""
@@ -8,7 +8,7 @@ def banner():
 	"""
 	print("########################################################################")
 	print("#                                                                      #")
-	print("#                         Property Lister v3.2                         #")
+	print("#                         Property Lister v3.3                         #")
 	print("#                                    by Ivan Sincek                    #")
 	print("#                                                                      #")
 	print("# Extract and convert property list files.                             #")
